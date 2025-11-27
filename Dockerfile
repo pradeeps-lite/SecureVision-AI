@@ -1,6 +1,7 @@
-FROM node:18
+FROM python:3.10-slim
 WORKDIR /app
 COPY . /app
-RUN npm install
-EXPOSE 3000
-CMD ["npm", "start"]
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+EXPOSE 5000
+CMD ["python", "app.py"]

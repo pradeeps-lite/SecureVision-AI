@@ -1,0 +1,12 @@
+flask
+flask-cors
+opencv-python
+numpy
+face_recognition
+scikit-image
+torch
+ultralytics
+pyjwt
+werkzeug
+pillow
+requests
